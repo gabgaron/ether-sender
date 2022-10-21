@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider; node ./bin/www",
-    "watch": "export NODE_OPTIONS=--openssl-legacy-provider; nodemon ./bin/www"
+    "watch": "export NODE_OPTIONS=--openssl-legacy-provider; nodemon --legacy-watch ./bin/www"
   },
   "dependencies": {
     "connect-flash": "^0.1.1",
@@ -14,6 +14,7 @@
     "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "web3": "^1.8.0"
   }
 }
